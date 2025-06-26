@@ -1,0 +1,48 @@
+.app-info {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  .app-info h2 {
+    font-size: 2rem;
+    color: #002855;
+    margin-bottom: 15px;
+  }
+  
+  .descripcion {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #444;
+  }
+  
+  .features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+  
+  .features li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #ccc;
+    color: #333;
+  }
+  
+  .btn-solicitar {
+    background-color: #00c896;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-solicitar:hover {
+    background-color: #00a67a;
+  }
+  

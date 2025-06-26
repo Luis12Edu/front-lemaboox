@@ -1,0 +1,60 @@
+<section class="nosotros-container full-width fondo-claro">
+  <div class="tabs" data-aos="fade-down">
+    <button [class.active]="seccion === 'nosotros'" (click)="seccion = 'nosotros'">Nosotros</button>
+    <button [class.active]="seccion === 'filosofia'" (click)="seccion = 'filosofia'">Filosofía</button>
+    <button [class.active]="seccion === 'valores'" (click)="seccion = 'valores'">Valores</button>
+  </div>
+
+  <div class="contenido-centralizado top-ajustado">
+    <!-- SECCIÓN: NOSOTROS -->
+    <ng-container *ngIf="seccion === 'nosotros'">
+      <h2 class="titulo-seccion" data-aos="fade-down">Bienvenidos a LEMABOOX</h2>
+      <p class="intro" data-aos="fade-up">
+        En LEMABOOX, creemos firmemente que una gestión administrativa eficiente es la base del crecimiento sostenido y de la competitividad empresarial.
+      </p>
+      <p class="intro" data-aos="fade-up" data-aos-delay="100">
+        Transformamos la complejidad en eficiencia mediante soluciones innovadoras, personalizadas y centradas en resultados,
+        que mejoran la toma de decisiones y fortalecen la operación diaria de nuestros clientes.
+      </p>
+    </ng-container>
+
+    <!-- SECCIÓN: FILOSOFÍA -->
+    <ng-container *ngIf="seccion === 'filosofia'">
+      <h2 class="titulo-seccion" data-aos="fade-down">Nuestra Filosofía</h2>
+      <div class="filosofia-grid">
+        <div class="filosofia-card" data-aos="zoom-in">
+          <img src="assets/filosofia/mision.png" alt="Misión">
+          <div>
+            <h3>Misión</h3>
+            <p>
+              Convertir la gestión administrativa en una ventaja competitiva, diseñando procesos claros, eficientes y automatizados que impulsen el rendimiento y la rentabilidad organizacional.
+            </p>
+          </div>
+        </div>
+        <div class="filosofia-card" data-aos="flip-left" data-aos-delay="100">
+          <img src="assets/filosofia/vision.png" alt="Visión">
+          <div>
+            <h3>Visión</h3>
+            <p>
+              Ser reconocidos como la consultoría líder en transformación administrativa, destacando por nuestra capacidad de innovación, excelencia en automatización y compromiso con la mejora continua.
+            </p>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+
+    <!-- SECCIÓN: VALORES -->
+    <ng-container *ngIf="seccion === 'valores'">
+      <div class="contenido-fade">
+        <h2 class="titulo-seccion" data-aos="fade-up" data-aos-duration="600">Nuestros Valores</h2>
+        <div class="valores-grid">
+          <div class="valor-card" data-aos="zoom-in-up" *ngFor="let valor of valores; let i = index" [attr.data-aos-delay]="i * 120">
+            <img [src]="'assets/filosofia/' + valor.icono" [alt]="valor.nombre" />
+            <h3>{{ valor.nombre }}</h3>
+            <p>{{ valor.descripcion }}</p>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</section>

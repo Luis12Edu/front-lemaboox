@@ -1,0 +1,81 @@
+.login-container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    color: #222;
+  }
+  
+  .login-container h2 {
+    color: #002855;
+    margin-bottom: 20px;
+  }
+  
+  .form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+  }
+  
+  input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  button {
+    background-color: #00c896;
+    border: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #00a67a;
+  }
+  
+  .registro-link {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .registro-link a {
+    color: #005377;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contrasena-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contrasena-wrapper input {
+    flex-grow: 1;
+  }
+  
+  .toggle {
+    margin-left: 10px;
+    background: none;
+    border: none;
+    color: #005377;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .toggle:hover {
+    text-decoration: underline;
+  }
+  

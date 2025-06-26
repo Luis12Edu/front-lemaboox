@@ -1,0 +1,42 @@
+<section class="servicio-container full-width fondo-claro">
+  <div class="contenido-centralizado top-ajustado">
+    <h1 class="titulo-servicio" data-aos="fade-down">
+      Gestión Integral Documental
+    </h1>
+
+    <!--<p class="descripcion-general" data-aos="fade-up" data-aos-delay="100">
+      Convertimos la gestión documental en un activo estratégico con digitalización y control estructurado.
+    </p>-->
+  </div>
+
+  <div class="carrusel-wrapper">
+    <button class="carrusel-btn left" (click)="scrollIzquierda()">&#10094;</button>
+
+    <div class="carrusel" #carrusel>
+      <div
+        class="sub-card"
+        *ngFor="let sub of subservicios; let i = index"
+        data-aos="fade-up"
+        [attr.data-aos-delay]="i * 100"
+      >
+        <div class="imagen-wrapper" *ngIf="sub.imagen">
+          <img [src]="sub.imagen" [alt]="sub.titulo" />
+        </div>
+        <div class="contenido">
+          <h3>{{ sub.titulo }}</h3>
+          <p>{{ sub.descripcion }}</p>
+          <ul>
+            <li *ngFor="let beneficio of sub.beneficios">✅ {{ beneficio }}</li>
+          </ul>
+          <!--<p *ngIf="sub.extra" class="nota">📊 {{ sub.extra }}</p>-->
+        </div>
+      </div>
+    </div>
+
+    <button class="carrusel-btn right" (click)="scrollDerecha()">&#10095;</button>
+  </div>
+
+  <div class="volver-wrapper">
+    <button class="btn-volver" (click)="volver()">Volver a servicios</button>
+  </div>
+</section>

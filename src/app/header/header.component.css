@@ -1,0 +1,94 @@
+/* Contenedor principal del header */
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #002855;
+  color: white;
+  padding: 15px 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+
+/* Branding (logo + texto) */
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+.branding h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #00c896;
+}
+
+.branding p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #e0e0e0;
+}
+
+/* Navegación */
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 10px;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+  color: #00c896;
+}
+
+/* Botón de login */
+.btn-login {
+  background-color: #00c896;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #00a67a;
+}
+
+/* Botón de cerrar sesión */
+.btn-cerrar {
+  background-color: transparent;
+  border: 2px solid #00c896;
+  color: #00c896;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-cerrar:hover {
+  background-color: #00c896;
+  color: black;
+}

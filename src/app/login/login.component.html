@@ -1,0 +1,28 @@
+<section class="login-container">
+    <h2>Iniciar sesión</h2>
+  
+    <form (ngSubmit)="iniciarSesion()" class="form-login">
+      <label>Correo electrónico</label>
+      <input type="email" [(ngModel)]="correo" name="correo" required />
+  
+      <label>Contraseña</label>
+      <div class="contrasena-wrapper">
+        <input
+          [type]="mostrarContrasena ? 'text' : 'password'"
+          [(ngModel)]="contrasena"
+          name="contrasena"
+          required
+        />
+        <button type="button" class="toggle" (click)="toggleMostrarContrasena()">
+          {{ mostrarContrasena ? 'Ocultar' : 'Mostrar' }}
+        </button>
+      </div>
+  
+      <button type="submit">🔐 Acceder</button>
+  
+      <p class="registro-link">
+        ¿No tienes cuenta? <a routerLink="/registro">Crear cuenta</a>
+      </p>
+    </form>
+  </section>
+  

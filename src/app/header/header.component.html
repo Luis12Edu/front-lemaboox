@@ -1,0 +1,28 @@
+<header class="header-container">
+  
+    <div class="branding">
+      <img src="assets/images/logo-lemaboox1.png" alt="LEMABOOX Logo" class="logo" />
+      <!--<div>
+        <h1>LEMABOOX</h1>
+        <p>Consultoría en procesos administrativos</p>
+      </div>--> 
+    </div>
+    <nav class="navigation">
+      <a routerLink="/inicio">Inicio</a>
+      <a routerLink="/servicios">Servicios</a>
+      <a routerLink="/nosotros">Nosotros</a>
+      <a routerLink="/contacto">Contacto</a>
+      <a routerLink="/aplicaciones">Aplicaciones</a>
+      
+      <ng-container *ngIf="!isLoggedIn(); else sesionActiva">
+        <a routerLink="/login" class="btn-login">Iniciar sesión</a>
+      </ng-container>
+  
+      <ng-template #sesionActiva>
+        <button class="btn-cerrar" (click)="cerrarSesion()">🔓 Cerrar sesión</button>
+      </ng-template>
+
+    </nav>
+ 
+  </header>
+  

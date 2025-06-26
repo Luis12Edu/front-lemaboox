@@ -1,0 +1,363 @@
+/* FULL WIDTH */
+.full-width {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.contenido {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  box-sizing: border-box;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  background: url('/assets/ilustraciones/banner-fondo.png') no-repeat center center / cover;
+  color: white;
+  min-height: 70vh; /* ← MÁS COMPACTO */
+  display: flex;
+  align-items: center;
+  padding: 0px 0;
+  overflow: hidden;
+}
+
+.hero-contenido {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(16, 37, 59, 0.7);
+  z-index: 1;
+}
+
+
+.hero-texto-central {
+  display: flex;
+  justify-content: flex-start; /* ← ALINEADO A LA IZQUIERDA */
+  align-items: center;
+  height: 100%;
+}
+
+.hero-texto-final {
+  max-width: 720px;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 10px;   /* ↓ Ajuste fino opcional */
+  padding-bottom: 10px;
+}
+
+.hero-texto-final h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.hero-texto-final p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #e0e0e0;
+}
+
+.btn-principal {
+  background-color: #00c896;
+  color: black;
+  padding: 14px 32px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.btn-principal:hover {
+  background-color: #00a67a;
+}
+
+.hero-imagen img {
+  max-width: 300px;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* SECCIONES */
+.seccion {
+  padding: 0;
+}
+
+.fondo-claro {
+  background: #f9f9f9;
+}
+
+.fondo-oscuro {
+  background: #10253b;
+}
+
+.titulo-seccion {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.titulo-seccion.blanco {
+  color: white;
+}
+
+/* SERVICIOS */
+.carrusel-servicios-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.carrusel-servicios {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+}
+
+.bloque-servicios {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px 32px;
+  flex-shrink: 0;
+  width: 100%;           /* ← Aquí antes decía min-width: 100%, lo quitamos */
+  max-width: 100%;       /* ← Asegura que no crezca más de lo debido */
+  box-sizing: border-box;
+  padding: 0 20px;       /* ← Agrega margen interior para evitar que rebose */
+}
+
+.card-servicio {
+  max-width: 100%;
+  width: 100%;
+  background: white;
+  padding: 0px 10px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-servicio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card-servicio img {
+  width: 60px;
+  margin-bottom: 12px;
+}
+
+.card-servicio h3 {
+  font-size: 1rem;
+  color: #002855;
+  margin-bottom: 10px;
+}
+
+.card-servicio p {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+.btn-carrusel {
+  background: none;
+  border: none;
+  font-size: 2.2rem;
+  color: #888;
+  cursor: pointer;
+  padding: 8px 14px;
+  transition: color 0.3s;
+  z-index: 2;
+}
+
+.btn-carrusel:hover {
+  color: #00c896;
+}
+
+@media (max-width: 1024px) {
+  .bloque-servicios {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+  }
+}
+
+@media (max-width: 768px) {
+  .bloque-servicios {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-carrusel {
+    display: none;
+  }
+
+  .card-servicio {
+    min-width: 85%;
+  }
+}
+
+
+/* APLICACIONES */
+.grid-aplicaciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.card-aplicacion {
+  display: flex;
+  align-items: flex-start;
+  background-color: #0e1e2d;
+  border-radius: 12px;
+  padding: 20px;
+  gap: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.card-aplicacion:hover {
+  transform: translateY(-5px);
+}
+
+.icono-aplicacion img {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+}
+
+.contenido-aplicacion {
+  color: white;
+  flex: 1;
+}
+
+.contenido-aplicacion h3 {
+  font-size: 1.2rem;
+  color: #00c896;
+  margin: 0 0 5px;
+}
+
+.subtitulo {
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-size: 0.98rem;
+}
+
+.descripcion {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.btn-app-acceso {
+  display: inline-block;
+  background-color: #00c896;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-app-acceso:hover {
+  background-color: #00a67a;
+  color: white;
+}
+
+.ver-mas {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.btn-acento {
+  background-color: transparent;
+  border: 2px solid #00c896;
+  color: #00c896;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-acento:hover {
+  background-color: #00c896;
+  color: black;
+  box-shadow: 0 4px 12px rgba(0, 200, 150, 0.3);
+}
+
+
+/* CTA */
+.cta {
+  background: #10253b;
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.btn-cta {
+  background: #00c896;
+  color: black;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.btn-cta:hover {
+  background: #00a67a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero-contenido,
+  .app,
+  .app.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-imagen img {
+    margin-top: 20px;
+  }
+
+  .app .info {
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-texto h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-texto .descripcion {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}

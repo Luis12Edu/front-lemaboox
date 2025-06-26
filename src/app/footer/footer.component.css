@@ -1,0 +1,85 @@
+.footer-container {
+  width: 100vw;
+  margin: 0;
+  padding: 30px 20px;
+  background-color: #1c1f26;
+  color: #ccc;
+  text-align: center;
+  font-size: 14px;
+  border-top: 4px solid #00c896;
+  box-sizing: border-box;
+}
+
+/* Redes con líneas */
+.footer-redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.footer-redes::before,
+.footer-redes::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #ccc;
+  max-width: 560px;
+  margin: 0 10px;
+}
+
+.footer-redes a img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-redes a:hover img {
+  transform: scale(1.15);
+  filter: brightness(0) invert(0.6);
+}
+
+.footer-logo img {
+  width: 240px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 5px;
+  padding-top: 12px;
+  font-size: 13px;
+}
+
+.footer-bottom a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .footer-redes {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .footer-redes::before,
+  .footer-redes::after {
+    max-width: 180px;
+  }
+
+  .footer-logo img {
+    width: 140px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}

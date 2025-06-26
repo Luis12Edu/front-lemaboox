@@ -1,0 +1,35 @@
+<section class="dashboard">
+    <h1>Panel de Aplicaciones</h1>
+    <p class="subtitulo">Bienvenido a LEMABOOX. Selecciona una aplicación para comenzar:</p>
+  
+    <div class="grid-apps">
+      <div class="app-card" (click)="irARuta('/apps/cuotas-claras')">
+        <div class="icono">🏫</div>
+        <h3>Cuotas Claras</h3>
+        <p>Control de aportaciones escolares</p>
+        <button>Ir a la App</button>
+      </div>
+  
+      <div class="app-card" (click)="irARuta('/apps/tiempos')">
+        <div class="icono">⏱️</div>
+        <h3>Tiempos Administrativos</h3>
+        <p>Registra y analiza tiempos de trabajo</p>
+        <button>Ir a la App</button>
+      </div>
+  
+      <div class="app-card" (click)="irARuta('/apps/carátulas')">
+        <div class="icono">🗂️</div>
+        <h3>Generador de Carátulas</h3>
+        <p>Crea carátulas y costados personalizados</p>
+        <button>Ir a la App</button>
+      </div>
+  
+      <div class="app-card" (click)="irARuta('/apps/cumpleaños')">
+        <div class="icono">🎉</div>
+        <h3>Cumpleaños y Aniversarios</h3>
+        <p>Organiza fechas importantes del personal</p>
+        <button>Ir a la App</button>
+      </div>
+    </div>
+  </section>
+  

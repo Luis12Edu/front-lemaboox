@@ -1,0 +1,39 @@
+<section class="registro-container">
+    <h2>Crear cuenta</h2>
+  
+    <form (ngSubmit)="crearCuenta()" class="form-registro">
+      <label>Nombre completo</label>
+      <input type="text" [(ngModel)]="nombre" name="nombre" required />
+  
+      <label>Correo electrónico</label>
+      <input type="email" [(ngModel)]="correo" name="correo" required />
+  
+      <label>Contraseña</label>
+      <div class="contrasena-wrapper">
+        <input
+          [type]="mostrarContrasena ? 'text' : 'password'"
+          [(ngModel)]="contrasena"
+          name="contrasena"
+          required
+        />
+        <button type="button" class="toggle" (click)="toggleMostrarContrasena()">
+          {{ mostrarContrasena ? 'Ocultar' : 'Mostrar' }}
+        </button>
+      </div>
+  
+      <label>Confirmar contraseña</label>
+      <input
+        [type]="mostrarContrasena ? 'text' : 'password'"
+        [(ngModel)]="confirmarContrasena"
+        name="confirmarContrasena"
+        required
+      />
+  
+      <button type="submit">📝 Registrar</button>
+  
+      <p class="login-link">
+        ¿Ya tienes cuenta? <a routerLink="/login">Iniciar sesión</a>
+      </p>
+    </form>
+  </section>
+  

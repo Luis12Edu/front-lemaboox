@@ -1,0 +1,156 @@
+.fondo-claro {
+  background-color: #f4f8fb;
+}
+
+.full-width {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.contacto-container {
+  padding: 60px 0;
+}
+
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.info-contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.caja-info {
+  background-color: #ffffff;
+  border-left: 4px solid #005377;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  transition: transform 0.3s ease;
+}
+
+.caja-info img {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.caja-info h3 {
+  margin: 0 0 8px;
+  color: #10253b;
+  font-size: 1.1rem;
+}
+
+.caja-info p {
+  margin: 0;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.caja-info:hover {
+  transform: translateY(-5px);
+}
+
+.caja-info.superpuesto {
+  position: relative;
+  left: 30%;
+  top: 10px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 25px;
+  gap: 10px;
+}
+
+.caja-info.superpuesto img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+/* FORMULARIO */
+.formulario-contacto {
+  background-color: #005377;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+
+  /* Nuevo margen derecho para espacio visual */
+  margin-right: 40px;
+  max-width: 580px;
+}
+
+.logo-formulario {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.formulario-contacto h2 {
+  color: #00c896;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formulario-contacto form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.formulario-contacto button {
+  padding: 10px 20px;
+  background-color: #00c896;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  align-self: center;
+  transition: background-color 0.3s;
+}
+
+.formulario-contacto button:hover {
+  background-color: #00c896;
+  color: black;
+  box-shadow: 0 4px 12px rgba(0, 200, 150, 0.3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .contacto-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .caja-info.superpuesto {
+    left: 0;
+    top: 0;
+  }
+
+  .formulario-contacto form {
+    width: 100%;
+  }
+}

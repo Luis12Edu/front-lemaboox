@@ -1,0 +1,31 @@
+<section class="servicios-container fondo-azul full-width">
+  <!-- Título fuera del contenido-centralizado para pegarlo al header -->
+  <h2 class="titulo-servicios" data-aos="fade-down" data-aos-delay="100" data-aos-offset="100" data-aos-duration="800">Soluciones integrales para tu organización</h2>
+
+  <div class="contenido-centralizado top-ajustado">
+    <!--<p class="intro">
+      LEMABOOX ofrece un portafolio especializado para empresas de todos los tamaños...
+    </p>-->
+  </div>
+
+  <div class="carrusel-wrapper">
+    <!--<button class="carrusel-btn left" (click)="scrollIzquierda()">&#10094;</button>-->
+
+    <div class="carrusel" #carrusel>
+      <div class="servicio-card" *ngFor="let servicio of servicios; let i = index" [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="i * 100">
+        <div class="imagen-wrapper">
+          <img [src]="'assets/servicios/' + servicio.imagen" alt="{{ servicio.titulo }}" />
+        </div>
+        <div class="card-info">
+          <h3>{{ servicio.titulo }}</h3>
+          <p>{{ servicio.descripcion }}</p>
+        </div>
+        <button class="btn-explorar" (click)="explorarServicio(servicio.ruta)">
+          Explorar <span class="icono-ojo">👁️</span>
+        </button>
+      </div>
+    </div>
+
+    <!--<button class="carrusel-btn right" (click)="scrollDerecha()">&#10095;</button>-->
+  </div>
+</section>

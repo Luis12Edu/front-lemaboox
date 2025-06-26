@@ -1,0 +1,120 @@
+/* CONTENEDOR PRINCIPAL */
+.aplicaciones-container {
+  background: linear-gradient(135deg, #f4f8fb 0%, #ffffff 100%);
+  padding: 40px 0 60px;
+  text-align: center;
+  color: #222;
+  width: 100vw;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.aplicaciones-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #002855;
+}
+
+.intro {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* GRID */
+.grid-apps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* CARD DE APLICACIÓN */
+.app-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+  transition: all 0.3s ease;
+  text-align: left;
+  position: relative;
+}
+
+.app-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 83, 119, 0.12);
+  border-left: 4px solid #00c896;
+}
+
+/* ICONO */
+.icono-app {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.app-card:hover .icono-app {
+  transform: scale(1.1);
+}
+
+/* TEXTO */
+.app-card h3 {
+  color: #005377;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.app-card p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* BOTÓN */
+.btn-app {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00c896;
+  color: black;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-app:hover {
+  background-color: #00a67a;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 200, 150, 0.4);
+}
+
+/* INSIGNIA OPCIONAL */
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #00c896;
+  color: white;
+  font-size: 0.7rem;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .app-card {
+    padding: 20px 15px;
+    text-align: center;
+  }
+
+  .btn-app {
+    width: 100%;
+    padding: 12px;
+  }
+}

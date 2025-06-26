@@ -1,0 +1,71 @@
+.dashboard {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+    color: #222;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #002855;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .subtitulo {
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .grid-apps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+  }
+  
+  .app-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 25px 20px;
+    transition: box-shadow 0.3s, transform 0.2s;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  .app-card:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transform: translateY(-5px);
+  }
+  
+  .icono {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .app-card h3 {
+    margin: 10px 0 5px;
+    color: #002855;
+  }
+  
+  .app-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .app-card button {
+    background-color: #00c896;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .app-card button:hover {
+    background-color: #00a67a;
+  }
+  

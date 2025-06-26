@@ -1,0 +1,74 @@
+<section class="hero full-width">
+  <div class="hero-overlay"></div> <!-- ← NUEVA CAPA -->
+  <div class="contenido hero-texto-central">
+    <div class="hero-texto-final">
+      <h1>Impulsa tu productividad<br>con procesos administrativos<br>optimizados</h1>
+      <p>
+        En LEMABOOX, creemos firmemente que una gestión administrativa eficiente es la base del crecimiento sostenido y de la competitividad empresarial.
+      </p>
+      <p>
+        Transformamos la complejidad en eficiencia mediante soluciones innovadoras, personalizadas y centradas en resultados, que mejoran la toma de decisiones y fortalecen la operación diaria de nuestros clientes.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="servicios" class="seccion fondo-claro full-width">
+  <div class="contenido">
+    <h2 class="titulo-seccion">Servicios Estratégicos</h2>
+
+    <div class="carrusel-servicios-wrapper">
+      <button class="btn-carrusel" (click)="scrollCarrusel('izq')">‹</button>
+
+      <div class="carrusel-servicios" #carrusel>
+        <div class="bloque-servicios" *ngFor="let grupo of serviciosEnBloques">
+          <div class="card-servicio" *ngFor="let servicio of grupo">
+            <img [src]="servicio.icono" [alt]="servicio.nombre" />
+            <h3>{{ servicio.nombre }}</h3>
+            <p>{{ servicio.descripcion }}</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-carrusel" (click)="scrollCarrusel('der')">›</button>
+    </div>
+
+    <div class="ver-mas">
+      <a routerLink="/servicios" class="btn-acento">Ver todos los servicios</a>
+    </div>
+  </div>
+</section>
+
+
+<section id="aplicaciones" class="seccion fondo-oscuro full-width">
+  <div class="contenido">
+    <h2 class="titulo-seccion blanco" data-aos="fade-down">Aplicaciones LEMABOOX</h2>
+
+    <div class="grid-aplicaciones">
+      <div class="card-aplicacion" *ngFor="let app of aplicaciones" data-aos="zoom-in">
+        <div class="icono-aplicacion">
+          <img [src]="app.icono" [alt]="app.titulo" />
+        </div>
+        <div class="contenido-aplicacion">
+          <h3>{{ app.titulo }}</h3>
+          <p class="subtitulo">{{ app.subtitulo }}</p>
+          <p class="descripcion">{{ app.descripcion }}</p>
+          <!--<a [routerLink]="app.ruta" class="btn-app-acceso">Ver aplicación</a>-->
+        </div>
+      </div>
+    </div>
+
+    <div class="ver-mas">
+      <a routerLink="/aplicaciones" class="btn-acento">Explorar todas las aplicaciones</a>
+    </div>
+  </div>
+</section>
+
+
+
+<!--<section class="cta full-width">
+  <div class="contenido">
+    <h2>¿Listo para profesionalizar tu operación?</h2>
+    <a href="#login" class="btn-cta">Iniciar sesión</a>
+  </div>
+</section> -->

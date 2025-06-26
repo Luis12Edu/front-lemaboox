@@ -1,0 +1,158 @@
+.full-width {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.fondo-claro {
+  background-color: #f4f8fb;
+}
+
+.contenido-centralizado {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.top-ajustado {
+  padding-top: 0;
+}
+
+.titulo-servicio {
+  font-size: 2.2rem;
+  color: #10253b;
+  margin: 0;
+  padding: 10px 40px 10px;
+  text-align: center;
+}
+
+.descripcion-general {
+  font-size: 1.1rem;
+  color: #444;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 900px;
+}
+
+.carrusel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px 10px;
+  overflow: hidden;
+}
+
+.carrusel {
+  display: flex;
+  gap: 30px;
+  justify-content: center; /* 👈 esto centra el carrusel aunque tenga 1 item */
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  max-width: 1280px;
+}
+
+.sub-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  flex: 0 0 340px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.sub-card:hover {
+  transform: translateY(-5px);
+}
+
+.imagen-wrapper {
+  height: 160px;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-wrapper img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.contenido {
+  padding: 20px;
+  text-align: left;
+}
+
+.contenido h3 {
+  font-size: 1.1rem;
+  color: #003f5c;
+  margin-bottom: 10px;
+}
+
+.contenido p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.contenido ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.contenido li {
+  font-size: 0.9rem;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.nota {
+  font-size: 0.85rem;
+  color: #555;
+  font-style: italic;
+}
+
+.carrusel-btn {
+  background: none;
+  border: none;
+  font-size: 2.2rem;
+  color: #888;
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s;
+  z-index: 10;
+}
+
+.carrusel-btn:hover {
+  color: #10253b;
+}
+
+.volver-wrapper {
+  text-align: center;
+  margin: 10px 0 20px;
+}
+
+.btn-volver {
+  background-color: transparent;
+  border: 2px solid #00c896;
+  color: #00c896;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-volver:hover {
+  background-color: #00c896;
+  color: black;
+  box-shadow: 0 4px 12px rgba(0, 200, 150, 0.2);
+}

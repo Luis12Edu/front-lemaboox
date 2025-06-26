@@ -1,0 +1,49 @@
+<section class="contacto-container full-width fondo-claro">
+  <div class="contenido-centralizado contacto-grid">
+    
+    <!-- Bloque Izquierdo: Información -->
+    <div class="info-contacto">
+      <div class="caja-info superpuesto">
+        <img src="assets/iconos/correo.png" alt="Correo">
+        <div>
+          <h3>Correo electronico</h3>
+          <p>contacto&#64;lemaboox.com</p>
+        </div>
+      </div>
+      <div class="caja-info superpuesto">
+        <img src="assets/iconos/telefono.png" alt="Teléfono">
+        <div>
+          <h3>Número de teléfono</h3>
+          <p>+52 449 185 6602</p>
+        </div>
+      </div>
+      <div class="caja-info superpuesto">
+        <img src="assets/iconos/ubicacion.png" alt="Ubicación">
+        <div>
+          <h3>Nos ubicamos en</h3>
+          <p>Aguascalientes, México</p>
+        </div>
+      </div>
+      <div class="caja-info superpuesto">
+        <img src="assets/iconos/horario.png" alt="Horario">
+        <div>
+          <h3>Nuestro horario</h3>
+          <p>Lunes a Viernes: 9:00am - 6:00pm</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bloque Derecho: Formulario -->
+    <div class="formulario-contacto" data-aos="fade-left">
+      <img src="assets/images/logo-lemaboox1.png" alt="LEMABOOX" class="logo-formulario" />
+      <h2>¿Tienes dudas o quieres trabajar con nosotros?</h2>
+      <form (submit)="enviarFormulario(); $event.preventDefault()">
+        <input type="text" placeholder="Nombre completo" [(ngModel)]="nombre" name="nombre" required />
+        <input type="email" placeholder="Correo electrónico" [(ngModel)]="correo" name="correo" required />
+        <textarea rows="4" placeholder="Escribe tu mensaje aquí..." [(ngModel)]="mensaje" name="mensaje" required></textarea>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </div>
+    
+  </div>
+</section>
