@@ -118,3 +118,60 @@
     padding: 12px;
   }
 }
+
+@media (max-width: 768px) {
+  .grid-apps {
+    gap: 20px;
+    padding: 0 16px;
+  }
+
+  .app-card {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .icono-app {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+  }
+
+  .app-card h3 {
+    font-size: 1rem;
+  }
+
+  .app-card p {
+    font-size: 0.9rem;
+  }
+
+  .btn-app {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    padding: 0 16px;
+  }
+
+  .aplicaciones-container h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-apps {
+    grid-template-columns: 1fr;
+  }
+
+  .app-card {
+    padding: 18px;
+  }
+
+  .btn-app {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}

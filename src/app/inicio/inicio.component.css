@@ -9,14 +9,14 @@
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 60px 40px;
+  padding: 10px 40px;
   box-sizing: border-box;
 }
 
 /* HERO */
 .hero {
   position: relative;
-  background: url('/assets/ilustraciones/banner-fondo.png') no-repeat center center / cover;
+  background: url('/assets/ilustraciones/banner-fondo.webp') no-repeat center center / cover;
   color: white;
   min-height: 70vh; /* ← MÁS COMPACTO */
   display: flex;
@@ -111,7 +111,7 @@
 .titulo-seccion {
   font-size: 1.8rem;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .titulo-seccion.blanco {
@@ -145,6 +145,7 @@
   max-width: 100%;       /* ← Asegura que no crezca más de lo debido */
   box-sizing: border-box;
   padding: 0 20px;       /* ← Agrega margen interior para evitar que rebose */
+  
 }
 
 .card-servicio {
@@ -156,6 +157,7 @@
   text-align: center;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 320px;
 }
 
 .card-servicio:hover {
@@ -164,7 +166,8 @@
 }
 
 .card-servicio img {
-  width: 60px;
+  margin-top: 12px;
+  width: 100px;
   margin-bottom: 12px;
 }
 
@@ -216,15 +219,84 @@
   }
 }
 
+/* AJUSTES RESPONSIVOS PARA LA SECCIÓN DE APLICACIONES */
+@media (max-width: 768px) {
+  .contenedor-carrusel-apps {
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 10px 0;
+  }
 
-/* APLICACIONES */
-.grid-aplicaciones {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-  gap: 30px;
-  margin-bottom: 60px;
+  .wrapper-carrusel {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 10px 20px;
+    min-width: 100%;
+  }
+
+  .bloque-apps {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-width: 100%;
+    gap: 20px;
+  }
+
+  .card-aplicacion {
+    min-width: 85vw;
+    max-width: 90vw;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .icono-aplicacion img {
+    width: 80px;
+    margin-bottom: 12px;
+  }
+
+  .contenido-aplicacion {
+    padding: 0;
+  }
 }
 
+
+/* APLICACIONES */
+/* CONTENEDOR CARRUSEL COMPLETO */
+.contenedor-carrusel-apps {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.wrapper-carrusel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 100px;
+  scrollbar-width: none; /* Firefox */
+}
+.wrapper-carrusel::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+.bloque-apps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  gap: 30px;
+  min-width: 1100px; /* 2 cards de 480px + gap */
+  box-sizing: border-box;
+}
+
+/* TARJETAS */
 .card-aplicacion {
   display: flex;
   align-items: flex-start;
@@ -234,16 +306,19 @@
   gap: 20px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
+  min-width: 480px; /* 👈 TAMAÑO HORIZONTAL */
+  height: auto;     /* 👈 TAMAÑO VERTICAL (ajustable) */
 }
 
 .card-aplicacion:hover {
   transform: translateY(-5px);
 }
 
+/* CONTENIDO INTERNO DE LA TARJETA */
 .icono-aplicacion img {
-  width: 70px;
-  height: 70px;
+  width: 100px;
   flex-shrink: 0;
+  margin-top: 12px;
 }
 
 .contenido-aplicacion {
@@ -270,22 +345,22 @@
   margin-bottom: 10px;
 }
 
-.btn-app-acceso {
-  display: inline-block;
-  background-color: #00c896;
-  color: black;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s;
+/* BOTONES FLECHA */
+.flecha {
+  background-color: transparent;
+  color: #00c896;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+  z-index: 1;
+  transition: color 0.3s;
 }
-
-.btn-app-acceso:hover {
-  background-color: #00a67a;
+.flecha:hover {
   color: white;
 }
 
+/* BOTÓN DE EXPLORAR TODAS LAS APLICACIONES */
 .ver-mas {
   text-align: center;
   margin-top: 10px;
@@ -308,7 +383,6 @@
   color: black;
   box-shadow: 0 4px 12px rgba(0, 200, 150, 0.3);
 }
-
 
 /* CTA */
 .cta {
@@ -359,5 +433,79 @@
   .hero-texto .descripcion {
     font-size: 1rem;
     padding: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+    background-position: center top;
+  }
+
+  .hero-texto-central {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-texto-final {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .hero-texto-final h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .hero-texto-final p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .bloque-apps {
+    grid-template-columns: 1fr;
+    min-width: 100%;
+    padding: 0 10px;
+  }
+
+  .card-aplicacion {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: auto;
+    width: 90vw;
+  }
+
+  .icono-aplicacion img {
+    width: 80px;
+    margin: 0 auto 10px;
+  }
+
+  .contenido-aplicacion h3 {
+    font-size: 1rem;
+  }
+
+  .subtitulo,
+  .descripcion {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor-carrusel-apps {
+    margin-bottom: 30px; /* Asegura espacio debajo del carrusel */
+  }
+
+  .ver-mas {
+    margin-top: 10px;
+    padding: 0 20px;
+    z-index: 2;
+    position: relative;
+  }
+
+  .btn-acento {
+    width: 100%;
+    display: inline-block;
+    max-width: 300px;
   }
 }

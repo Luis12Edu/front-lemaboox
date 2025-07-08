@@ -42,7 +42,7 @@ export class EsgSostenibilidadComponent {
         'Mayor confianza de inversionistas, clientes y colaboradores.',
         'Reducción de riesgos legales y reputacionales.'
       ],
-      imagen: 'assets/subservicios/9_1-estrategias.png'
+      imagen: 'assets/subservicios/9_1-estrategias.webp'
     },
     {
       titulo: '9.2 Implementación de Procesos Lean con Enfoque Sostenible',
@@ -52,7 +52,7 @@ export class EsgSostenibilidadComponent {
         'Alineación de la eficiencia operativa con la sostenibilidad.',
         'Reducción de costos operativos.'
       ],
-      imagen: 'assets/subservicios/9_2-procesos.png'
+      imagen: 'assets/subservicios/9_2-procesos.webp'
     },
     {
       titulo: '9.3 Auditorías Sostenibles',
@@ -62,7 +62,7 @@ export class EsgSostenibilidadComponent {
         'Identificación de áreas críticas y prioridades de acción.',
         'Preparación para certificaciones y estándares internacionales.'
       ],
-      imagen: 'assets/subservicios/9_3-auditorias.png'
+      imagen: 'assets/subservicios/9_3-auditorias.webp'
     },
     {
       titulo: '9.4 Programas de Sensibilización y Formación en ESG',
@@ -72,7 +72,7 @@ export class EsgSostenibilidadComponent {
         'Mayor involucramiento del equipo en temas ESG.',
         'Alineación del comportamiento interno con los valores institucionales.'
       ],
-      imagen: 'assets/subservicios/9_4-programas.png'
+      imagen: 'assets/subservicios/9_4-programas.webp'
     },
     {
       titulo: '9.5 Integración de Métricas ESG en Sistemas de Gestión',
@@ -82,7 +82,7 @@ export class EsgSostenibilidadComponent {
         'Respuesta ágil ante cambios regulatorios.',
         'Visibilidad clara para toma de decisiones responsables.'
       ],
-      imagen: 'assets/subservicios/9_5-integracion.png'
+      imagen: 'assets/subservicios/9_5-integracion.webp'
     }
   ];
 }

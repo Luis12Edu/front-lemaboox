@@ -42,7 +42,7 @@ export class MejoraContinuaComponent {
         'Mayor control y orden en la gestión documental y operativa.',
         'Rentabilidad aumentada mediante el uso eficiente de recursos.'
       ],
-      imagen: 'assets/subservicios/7_1-optimizacion.png'
+      imagen: 'assets/subservicios/7_1-optimizacion.webp'
     },
     {
       titulo: '7.2 Proyectos DMAIC y Análisis Six Sigma',
@@ -52,7 +52,7 @@ export class MejoraContinuaComponent {
         'Procesos más estables, medibles y predecibles.',
         'Mejora de la calidad con métricas claras de seguimiento.'
       ],
-      imagen: 'assets/subservicios/7_2-proyectos.png'
+      imagen: 'assets/subservicios/7_2-proyectos.webp'
     },
     {
       titulo: '7.3 Capacitación y Eventos Kaizen',
@@ -62,7 +62,7 @@ export class MejoraContinuaComponent {
         'Mayor compromiso del personal con la mejora continua.',
         'Desarrollo de competencias estratégicas y operativas.'
       ],
-      imagen: 'assets/subservicios/7_3-capacitacion.png'
+      imagen: 'assets/subservicios/7_3-capacitacion.webp'
     },
     {
       titulo: '7.4 Implementación de Herramientas Digitales para Gestión de Calidad',
@@ -72,7 +72,7 @@ export class MejoraContinuaComponent {
         'Visualización clara del desempeño de los procesos.',
         'Agilidad en la detección de desviaciones y en la implementación de ajustes.'
       ],
-      imagen: 'assets/subservicios/7_4-herramientas.png'
+      imagen: 'assets/subservicios/7_4-herramientas.webp'
     }
   ];
 }

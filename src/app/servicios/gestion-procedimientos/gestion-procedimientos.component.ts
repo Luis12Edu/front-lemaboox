@@ -37,7 +37,7 @@ export class GestionProcedimientosComponent {
         'Refuerza la cultura organizacional y el sentido de pertenencia.',
         'Facilita la comunicación interna y externa.'
       ],
-      imagen: 'assets/subservicios/1_1-politicas.png',
+      imagen: 'assets/subservicios/1_1-politicas.webp',
       extra: 'Las organizaciones con políticas claras experimentan hasta un 30% menos conflictos internos y un 20% más retención de talento.'
     },
     {
@@ -48,7 +48,7 @@ export class GestionProcedimientosComponent {
         'Mejora en la calidad del servicio.',
         'Agilidad en la capacitación e integración de nuevo personal.'
       ],
-      imagen: 'assets/subservicios/1_2-procedimientos.png',
+      imagen: 'assets/subservicios/1_2-procedimientos.webp',
       extra: 'La documentación efectiva reduce en un 40% los tiempos de ejecución y mejora el cumplimiento normativo en un 25%.'
     },
     {
@@ -59,7 +59,7 @@ export class GestionProcedimientosComponent {
         'Identificación de ineficiencias y mejoras inmediatas.',
         'Mejora de la coordinación interdepartamental y del tiempo de respuesta.'
       ],
-      imagen: 'assets/subservicios/1_3-ineficiencias.png'
+      imagen: 'assets/subservicios/1_3-ineficiencias.webp'
     }
   ];
 

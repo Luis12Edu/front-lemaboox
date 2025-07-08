@@ -42,7 +42,7 @@ export class OptimizacionPuestosComponent {
         'Aumento de la productividad y eficiencia individual.',
         'Eliminación de tareas duplicadas o innecesarias.'
       ],
-      imagen: 'assets/subservicios/5_1-evaluacion.png'
+      imagen: 'assets/subservicios/5_1-evaluacion.webp'
     },
     {
       titulo: '5.2 Diseño y Actualización de Perfiles de Puesto',
@@ -52,7 +52,7 @@ export class OptimizacionPuestosComponent {
         'Base sólida para procesos de reclutamiento y evaluación.',
         'Mejora en la alineación del talento con los objetivos del negocio.'
       ],
-      imagen: 'assets/subservicios/5_2-perfiles.png'
+      imagen: 'assets/subservicios/5_2-perfiles.webp'
     },
     {
       titulo: '5.3 Diseño de Estructuras Organizacionales',
@@ -62,7 +62,7 @@ export class OptimizacionPuestosComponent {
         'Fluidez en la comunicación interna.',
         'Integración efectiva de nuevos colaboradores.'
       ],
-      imagen: 'assets/subservicios/5_3-estructuras.png'
+      imagen: 'assets/subservicios/5_3-estructuras.webp'
     },
     {
       titulo: '5.4 Elaboración de Manuales de Funciones',
@@ -72,7 +72,7 @@ export class OptimizacionPuestosComponent {
         'Apoyo en la inducción y capacitación del personal.',
         'Evaluación objetiva del cumplimiento de funciones.'
       ],
-      imagen: 'assets/subservicios/5_4-manuales.png'
+      imagen: 'assets/subservicios/5_4-manuales.webp'
     },
     {
       titulo: '5.5 Evaluación del Desempeño',
@@ -82,7 +82,7 @@ export class OptimizacionPuestosComponent {
         'Toma de decisiones fundamentada para promociones o ajustes.',
         'Fomento del desarrollo profesional continuo.'
       ],
-      imagen: 'assets/subservicios/5_5-desempeño.png'
+      imagen: 'assets/subservicios/5_5-desempeño.webp'
     },
     {
       titulo: '5.6 Estrategias de Crecimiento y Desarrollo',
@@ -92,7 +92,7 @@ export class OptimizacionPuestosComponent {
         'Cultura de aprendizaje y mejora continua.',
         'Trayectorias de desarrollo profesional claras.'
       ],
-      imagen: 'assets/subservicios/5_6-estrategias.png'
+      imagen: 'assets/subservicios/5_6-estrategias.webp'
     },
     {
       titulo: '5.7 Toma de Tiempos Administrativos',
@@ -102,7 +102,7 @@ export class OptimizacionPuestosComponent {
         'Reducción de actividades improductivas.',
         'Reasignación inteligente de tareas según el valor generado.'
       ],
-      imagen: 'assets/subservicios/5_7-tomaTiempos.png'
+      imagen: 'assets/subservicios/5_7-tomaTiempos.webp'
     }
   ];
 }

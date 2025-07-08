@@ -39,23 +39,28 @@
   </div>
 </section>
 
-
 <section id="aplicaciones" class="seccion fondo-oscuro full-width">
   <div class="contenido">
     <h2 class="titulo-seccion blanco" data-aos="fade-down">Aplicaciones LEMABOOX</h2>
+    <div class="contenedor-carrusel-apps">
+      <button class="flecha" (click)="scrollCarruselApps('izq')">&lt;</button>
 
-    <div class="grid-aplicaciones">
-      <div class="card-aplicacion" *ngFor="let app of aplicaciones" data-aos="zoom-in">
-        <div class="icono-aplicacion">
-          <img [src]="app.icono" [alt]="app.titulo" />
-        </div>
-        <div class="contenido-aplicacion">
-          <h3>{{ app.titulo }}</h3>
-          <p class="subtitulo">{{ app.subtitulo }}</p>
-          <p class="descripcion">{{ app.descripcion }}</p>
-          <!--<a [routerLink]="app.ruta" class="btn-app-acceso">Ver aplicación</a>-->
+      <div #carruselApps class="wrapper-carrusel">
+        <div class="bloque-apps" *ngFor="let grupo of bloquesAplicaciones">
+          <div class="card-aplicacion" *ngFor="let app of grupo" [routerLink]="app.ruta">
+            <div class="icono-aplicacion">
+              <img [src]="app.icono" [alt]="app.titulo" />
+            </div>
+            <div class="contenido-aplicacion">
+              <h3>{{ app.titulo }}</h3>
+              <p class="subtitulo">{{ app.subtitulo }}</p>
+              <p class="descripcion">{{ app.descripcion }}</p>
+            </div>
+          </div>
         </div>
       </div>
+
+      <button class="flecha" (click)="scrollCarruselApps('der')">&gt;</button>
     </div>
 
     <div class="ver-mas">
@@ -63,7 +68,6 @@
     </div>
   </div>
 </section>
-
 
 
 <!--<section class="cta full-width">

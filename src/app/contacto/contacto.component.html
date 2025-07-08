@@ -4,28 +4,28 @@
     <!-- Bloque Izquierdo: Información -->
     <div class="info-contacto">
       <div class="caja-info superpuesto">
-        <img src="assets/iconos/correo.png" alt="Correo">
+        <img src="assets/iconos/correo.webp" alt="Correo">
         <div>
           <h3>Correo electronico</h3>
           <p>contacto&#64;lemaboox.com</p>
         </div>
       </div>
       <div class="caja-info superpuesto">
-        <img src="assets/iconos/telefono.png" alt="Teléfono">
+        <img src="assets/iconos/telefono.webp" alt="Teléfono">
         <div>
           <h3>Número de teléfono</h3>
           <p>+52 449 185 6602</p>
         </div>
       </div>
       <div class="caja-info superpuesto">
-        <img src="assets/iconos/ubicacion.png" alt="Ubicación">
+        <img src="assets/iconos/ubicacion.webp" alt="Ubicación">
         <div>
           <h3>Nos ubicamos en</h3>
           <p>Aguascalientes, México</p>
         </div>
       </div>
       <div class="caja-info superpuesto">
-        <img src="assets/iconos/horario.png" alt="Horario">
+        <img src="assets/iconos/horario.webp" alt="Horario">
         <div>
           <h3>Nuestro horario</h3>
           <p>Lunes a Viernes: 9:00am - 6:00pm</p>
@@ -35,7 +35,7 @@
 
     <!-- Bloque Derecho: Formulario -->
     <div class="formulario-contacto" data-aos="fade-left">
-      <img src="assets/images/logo-lemaboox1.png" alt="LEMABOOX" class="logo-formulario" />
+      <img src="assets/images/logo-lemaboox1.webp" alt="LEMABOOX" class="logo-formulario" />
       <h2>¿Tienes dudas o quieres trabajar con nosotros?</h2>
       <form (submit)="enviarFormulario(); $event.preventDefault()">
         <input type="text" placeholder="Nombre completo" [(ngModel)]="nombre" name="nombre" required />
@@ -47,3 +47,10 @@
     
   </div>
 </section>
+
+<div *ngIf="mensajeExito" class="notificacion-exito">
+  ✅ Mensaje enviado correctamente.
+</div>
+<div *ngIf="mensajeError" class="notificacion-error">
+  {{ mensajeError }}
+</div>

@@ -13,32 +13,32 @@ export class NosotrosComponent {
 
   valores = [
   {
-    icono: 'Integridad.png',
+    icono: 'Integridad.webp',
     nombre: 'Integridad',
     descripcion: 'Actuamos con ética y responsabilidad en cada proyecto, garantizando confianza y transparencia.'
   },
   {
-    icono: 'Innovacion.png',
+    icono: 'Innovacion.webp',
     nombre: 'Innovación',
     descripcion: 'Aprovechamos soluciones creativas y tecnologías de vanguardia para mejorar procesos.'
   },
   {
-    icono: 'Colaboracion.png',
+    icono: 'Colaboracion.webp',
     nombre: 'Colaboración',
     descripcion: 'Impulsamos el trabajo en equipo y la comunicación efectiva, alineando esfuerzos estratégicos.'
   },
   {
-    icono: 'Excelencia.png',
+    icono: 'Excelencia.webp',
     nombre: 'Excelencia',
     descripcion: 'Buscamos superar los estándares en calidad y resultados con profesionalismo constante.'
   },
   {
-    icono: 'Eficiencia.png',
+    icono: 'Eficiencia.webp',
     nombre: 'Eficiencia',
     descripcion: 'Reducimos desperdicios, optimizamos tiempos y maximizamos el uso de recursos.'
   },
   {
-    icono: 'Transparencia.png',
+    icono: 'Transparencia.webp',
     nombre: 'Transparencia',
     descripcion: 'Convertir la gestión administrativa en una ventaja competitiva, diseñando procesos claros, eficientes y automatizados.'
   }

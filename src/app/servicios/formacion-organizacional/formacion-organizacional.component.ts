@@ -42,7 +42,7 @@ export class FormacionOrganizacionalComponent {
         'Aplicación práctica de herramientas administrativas.',
         'Mejora en la toma de decisiones cotidianas.'
       ],
-      imagen: 'assets/subservicios/6_1-capacitacion.png'
+      imagen: 'assets/subservicios/6_1-capacitacion.webp'
     },
     {
       titulo: '6.3 Gestión del Tiempo y Productividad',
@@ -52,7 +52,7 @@ export class FormacionOrganizacionalComponent {
         'Disminución de retrabajos y desperdicios de tiempo.',
         'Incremento en la productividad individual y colectiva.'
       ],
-      imagen: 'assets/subservicios/6_3-gestion.png'
+      imagen: 'assets/subservicios/6_3-gestion.webp'
     },
     {
       titulo: '6.4 Formación en Habilidades Blandas (Soft Skills)',
@@ -62,7 +62,7 @@ export class FormacionOrganizacionalComponent {
         'Desarrollo de líderes con visión estratégica.',
         'Equipos más cohesionados y resilientes.'
       ],
-      imagen: 'assets/subservicios/6_4-formacion.png'
+      imagen: 'assets/subservicios/6_4-formacion.webp'
     },
     {
       titulo: '6.5 Análisis del Clima Organizacional',
@@ -72,7 +72,7 @@ export class FormacionOrganizacionalComponent {
         'Prevención de conflictos internos.',
         'Aumento en la retención y compromiso del talento humano.'
       ],
-      imagen: 'assets/subservicios/6_5-analisis.png'
+      imagen: 'assets/subservicios/6_5-analisis.webp'
     },
     {
       titulo: '6.6 Servicio “Hablemos: Talk Me”',
@@ -82,7 +82,7 @@ export class FormacionOrganizacionalComponent {
         'Detección temprana de problemas internos.',
         'Clima laboral más armónico y transparente.'
       ],
-      imagen: 'assets/subservicios/6_6-servicio.png'
+      imagen: 'assets/subservicios/6_6-servicio.webp'
     }
   ];
 }

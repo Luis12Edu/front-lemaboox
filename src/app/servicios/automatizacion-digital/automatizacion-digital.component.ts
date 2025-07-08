@@ -36,7 +36,7 @@ export class AutomatizacionDigitalComponent {
         'Libera tiempo del personal para tareas estratégicas.',
         'Mejora continua a través del monitoreo automatizado.'
       ],
-      imagen: 'assets/subservicios/2_1-automatización.png',
+      imagen: 'assets/subservicios/2_1-automatización.webp',
        extra: null  // ✅ Soluciona el error
     },
     {
@@ -47,7 +47,7 @@ export class AutomatizacionDigitalComponent {
         'Cumplimiento normativo garantizado.',
         'Mayor organización documental y trazabilidad.'
       ],
-      imagen: 'assets/subservicios/2_2-versiones.png',
+      imagen: 'assets/subservicios/2_2-versiones.webp',
          extra: null  // ✅ Soluciona el error
     },
     {
@@ -58,7 +58,7 @@ export class AutomatizacionDigitalComponent {
         'Eliminación de duplicidades y redundancias.',
         'Mejora en la toma de decisiones basada en datos.'
       ],
-      imagen: 'assets/subservicios/2_3-consolidación.png',
+      imagen: 'assets/subservicios/2_3-consolidación.webp',
        extra: null  // ✅ Soluciona el error
     },
     {
@@ -69,7 +69,7 @@ export class AutomatizacionDigitalComponent {
         'Reducción de reprocesos y retrasos.',
         'Coordinación precisa entre áreas operativas.'
       ],
-      imagen: 'assets/subservicios/2_4-estendarización.png',
+      imagen: 'assets/subservicios/2_4-estendarización.webp',
        extra: null  // ✅ Soluciona el error
     },
     {
@@ -80,7 +80,7 @@ export class AutomatizacionDigitalComponent {
         'Recolección de datos más precisa y eficiente.',
         'Integración con otras herramientas o bases de datos.'
       ],
-      imagen: 'assets/subservicios/2_5-formularios.png',
+      imagen: 'assets/subservicios/2_5-formularios.webp',
        extra: null  // ✅ Soluciona el error
     }
   ];

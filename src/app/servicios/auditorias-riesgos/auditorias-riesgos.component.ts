@@ -41,7 +41,7 @@ export class AuditoriasRiesgosComponent {
         'Detección oportuna de incumplimientos o debilidades.',
         'Mayor preparación para auditorías externas o certificaciones.'
       ],
-      imagen: 'assets/subservicios/4_1-auditorias.png'
+      imagen: 'assets/subservicios/4_1-auditorias.webp'
     },
     {
       titulo: '4.2 Control de Calidad',
@@ -51,7 +51,7 @@ export class AuditoriasRiesgosComponent {
         'Identificación y corrección de desviaciones.',
         'Mejora sostenida de la calidad del servicio.'
       ],
-      imagen: 'assets/subservicios/4_2-calidad.png'
+      imagen: 'assets/subservicios/4_2-calidad.webp'
     },
     {
       titulo: '4.3 Planes de Acciones Integrales',
@@ -61,7 +61,7 @@ export class AuditoriasRiesgosComponent {
         'Fortalecimiento de la capacidad de respuesta.',
         'Cultura de mejora continua y prevención.'
       ],
-      imagen: 'assets/subservicios/4_3-planes.png'
+      imagen: 'assets/subservicios/4_3-planes.webp'
     },
     {
       titulo: '4.4 Gestión Integral de Riesgos',
@@ -71,7 +71,7 @@ export class AuditoriasRiesgosComponent {
         'Mayor capacidad de adaptación ante contingencias.',
         'Continuidad operativa y sostenibilidad empresarial.'
       ],
-      imagen: 'assets/subservicios/4_4-gestion.png'
+      imagen: 'assets/subservicios/4_4-gestion.webp'
     },
     {
       titulo: '4.5 Mapeo de Procesos Clave',
@@ -81,7 +81,7 @@ export class AuditoriasRiesgosComponent {
         'Identificación de oportunidades de optimización.',
         'Mejora en la toma de decisiones operativas.'
       ],
-      imagen: 'assets/subservicios/4_5-mapeo.png'
+      imagen: 'assets/subservicios/4_5-mapeo.webp'
     },
     {
       titulo: '4.6 Seguimiento de Indicadores Clave (KPI)',
@@ -91,7 +91,7 @@ export class AuditoriasRiesgosComponent {
         'Toma de decisiones basada en datos.',
         'Fomento de una cultura orientada a resultados.'
       ],
-      imagen: 'assets/subservicios/4_6-seguimiento.png'
+      imagen: 'assets/subservicios/4_6-seguimiento.webp'
     },
     {
       titulo: '4.7 Evaluación Externa de Calidad de Servicio',
@@ -101,7 +101,7 @@ export class AuditoriasRiesgosComponent {
         'Mejora en la atención y servicio al cliente.',
         'Reputación fortalecida ante el mercado.'
       ],
-      imagen: 'assets/subservicios/4_7-evaluacion.png'
+      imagen: 'assets/subservicios/4_7-evaluacion.webp'
     }
   ];
 }

@@ -42,7 +42,7 @@ export class DesarrolloAplicacionesComponent {
         'Acceso remoto seguro desde cualquier ubicación.',
         'Aumento de eficiencia y reducción de tareas manuales.'
       ],
-      imagen: 'assets/subservicios/8_1-aplicaciones.png'
+      imagen: 'assets/subservicios/8_1-aplicaciones.webp'
     },
     {
       titulo: '8.2 Creación de Herramientas Interactivas Personalizadas',
@@ -52,7 +52,7 @@ export class DesarrolloAplicacionesComponent {
         'Interfaces intuitivas y fáciles de usar.',
         'Reducción de errores humanos y mejora en la presentación de información.'
       ],
-      imagen: 'assets/subservicios/8_2-herramientas.png'
+      imagen: 'assets/subservicios/8_2-herramientas.webp'
     },
     {
       titulo: '8.3 Integración de Funcionalidades con Bases de Datos',
@@ -62,7 +62,7 @@ export class DesarrolloAplicacionesComponent {
         'Automatización de reportes y gráficas.',
         'Mejora en la toma de decisiones basada en datos.'
       ],
-      imagen: 'assets/subservicios/8_3-funcionalidades.png'
+      imagen: 'assets/subservicios/8_3-funcionalidades.webp'
     },
     {
       titulo: '8.4 Control de Usuarios y Roles',
@@ -72,7 +72,7 @@ export class DesarrolloAplicacionesComponent {
         'Personalización de vistas y acciones según perfil.',
         'Mayor control operativo.'
       ],
-      imagen: 'assets/subservicios/8_4-control.png'
+      imagen: 'assets/subservicios/8_4-control.webp'
     }
   ];
 }

@@ -42,7 +42,7 @@ export class GestionDocumentalComponent {
         'Reducción de espacio físico y costos de almacenamiento.',
         'Cumplimiento con normativas legales y fiscales.'
       ],
-      imagen: 'assets/subservicios/3_1-organizacion.png'
+      imagen: 'assets/subservicios/3_1-organizacion.webp'
     },
     {
       titulo: '3.2 Desarrollo de Bases de Datos Documentales',
@@ -52,7 +52,7 @@ export class GestionDocumentalComponent {
         'Búsqueda eficiente mediante filtros y etiquetas.',
         'Integración con sistemas existentes (ERP, CRM, etc.).'
       ],
-      imagen: 'assets/subservicios/3_2-desarrollo.png'
+      imagen: 'assets/subservicios/3_2-desarrollo.webp'
     },
     {
       titulo: '3.3 Auditorías, Depuración y Actualización de Archivos',
@@ -62,7 +62,7 @@ export class GestionDocumentalComponent {
         'Eliminación de información innecesaria o desactualizada.',
         'Mejora continua y trazabilidad en la gestión de archivos.'
       ],
-      imagen: 'assets/subservicios/3_3-auditorias.png'
+      imagen: 'assets/subservicios/3_3-auditorias.webp'
     }
   ];
 }
